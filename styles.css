@@ -1,0 +1,267 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header img {
+    width: 150px;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-cta {
+    padding: 10px 30px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-cta:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  
+  .slide-left {
+    animation: slideLeft 1s ease-out;
+  }
+  
+  /* Sección Quiénes Somos */
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #0073e6;
+    text-align: center;
+  }
+  
+  .section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .section img {
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  /* Misión,Here's the updated **CSS** continuing from the improvements:
+  
+  ```css
+  /* Misión, Visión, Valores Section */
+  .values-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .values-grid div {
+    background-color: #e6f0ff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s;
+  }
+  
+  .values-grid h2 {
+    font-size: 1.5rem;
+    color: #004080;
+  }
+  
+  .values-grid i {
+    font-size: 2.5rem;
+    color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  .values-grid p, .values-grid ul {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .values-grid div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Services Section */
+  .services-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+  }
+  
+  .service img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .service:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid, .values-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .service, .values-grid div {
+      width: 88%;
+    }
+  }
+  
+  /* Contact Section */
+  .btn-contact {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-size: 1.1rem;
+  }
+  
+  .btn-contact i {
+    margin-right: 10px;
+  }
+  
+  .btn-contact:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  
